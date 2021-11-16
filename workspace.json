@@ -2,6 +2,10 @@
   "version": 2,
   "projects": {
     "app-shell": "apps/app-shell",
-    "app-shell-e2e": "apps/app-shell-e2e"
+    "app-shell-e2e": "apps/app-shell-e2e",
+    "cart": "apps/cart",
+    "cart-e2e": "apps/cart-e2e",
+    "shop": "apps/shop",
+    "shop-e2e": "apps/shop-e2e"
   }
 }

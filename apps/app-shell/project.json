@@ -20,7 +20,7 @@
         ],
         "styles": [],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "apps/app-shell/webpack.config.js"
       },
       "configurations": {
         "production": {
@@ -42,6 +42,7 @@
     "serve": {
       "executor": "@nrwl/web:dev-server",
       "options": {
+        "port": 3000,
         "buildTarget": "app-shell:build",
         "hmr": true
       },

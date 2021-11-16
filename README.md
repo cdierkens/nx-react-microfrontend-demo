@@ -10,6 +10,14 @@ yarn install
 
 ## Run
 
+In one terminal
+
+```
+yarn nx serve shop
+```
+
+Once `shop` is running, in a seperate terminal
+
 ```
 yarn start
 ```

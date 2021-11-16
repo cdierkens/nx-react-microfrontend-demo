@@ -23,10 +23,7 @@ module.exports = (config) => {
         library: { type: 'var', name: 'mfShop' },
         filename: 'remoteEntry.js',
         exposes: {
-          './ShopService': './src/ShopService',
-        },
-        remotes: {
-          hostApp: 'hostApp',
+          './app': './src/app/app',
         },
         shared: {
           ...deps,

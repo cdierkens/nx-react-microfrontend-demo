@@ -1,18 +1,44 @@
 import React from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
+import styled from 'styled-components';
+import { Home } from '../home/home';
 
 // eslint-disable-next-line
 // @ts-ignore
-const ShopService = React.lazy(() => import('mfShop/ShopService'));
+const ShopApp = React.lazy(() => import('mfShop/app'));
+
+const StyledApp = styled.div`
+  a {
+    padding: 4px;
+  }
+
+  nav,
+  main {
+    padding: 16px;
+  }
+`;
 
 export function App() {
   return (
-    <header className="flex">
-      <h1>Welcome to app-shell!</h1>
-
-      <React.Suspense fallback="Loading ShopService">
-        <ShopService />
-      </React.Suspense>
-    </header>
+    <StyledApp>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="shop">Shop</Link>
+      </nav>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="shop/*"
+            element={
+              <React.Suspense fallback={<>...</>}>
+                <ShopApp />
+              </React.Suspense>
+            }
+          />
+        </Routes>
+      </main>
+    </StyledApp>
   );
 }
 

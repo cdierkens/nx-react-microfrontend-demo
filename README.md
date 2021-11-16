@@ -14,6 +14,10 @@ yarn install
 yarn start
 ```
 
+Visit http://localhost:3000
+
+Note: You can also visit the shop application at http://localhost:3001, with the caveat that shared styles and theming have not been implemented.
+
 ## Structure
 
 ### `apps/app-shell`

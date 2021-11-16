@@ -22,7 +22,7 @@ Note: You can also visit the shop application at http://localhost:3001, with the
 
 ### `apps/app-shell`
 
-Houses the appliction wide routes and lazy loads the `shop` app at the `/shop` route.
+Houses the application wide routes and lazy loads the `shop` app at the `/shop` route.
 
 ### `apps/shop`
 
